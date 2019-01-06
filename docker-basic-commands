@@ -22,3 +22,5 @@ docker rmi imageid						---> remove image
 docker pull image:version					---> pull docker image
 docker run -p 8080:80 --name cotnainername imagename:version	---> pull and execute docker container
 
+
+docker exec -it containername bash				--> get container CLI access
