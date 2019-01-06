@@ -1,0 +1,24 @@
+system start docker						---> start docker service
+system enable docker						---> enable docker service
+
+docker ps							--> list out running docker cotnainers
+docker ps -a							--> list out stoppeed and running container(all)
+
+
+docker images							--> list of images
+docker images -a						--> list of images with layers
+
+
+docker start containeris					---> start container
+docker stop containerid						---> stop cotnainer
+
+
+docker rm $(docker ps -aq)					---> remove all container at a time
+docker rmi $(docker ps -aq)					---> remove all images at a timee
+
+docker rm containerid						---> remove container
+docker rmi imageid						---> remove image
+
+docker pull image:version					---> pull docker image
+docker run -p 8080:80 --name cotnainername imagename:version	---> pull and execute docker container
+
