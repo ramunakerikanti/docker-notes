@@ -10,12 +10,21 @@ Examples:
 
 docker swarm init --advertise-addr 192.168.99.121	----> start docker-host in swarm mode with specific address
 docker swarm join --token SWMTKN-1-3pu6hszjas19xyp7ghgosyx9k8atbfcr8p2is99znpy26u2lkl-1awxwuwd3z9j1z3puu7rcgdbx 172.17.0.2:2377 ---> join worker with master node
+
+
 docker stack deploy --compose-file=docker-compose.yml containername------->|
 docker stack deploy -c docker-compose.yml rshniy_server_cluster----------->|<------------------------creare container accross clusters
 
+
+
+
+
 docker service scale serivicename=4					    ------------------------scale up containers across cluster	
-#Example:
 docker service scale rshniy_server_cluster_rshiny-server=4
+
+
+
+
 docker service ps cotainername						    ------------------------>list of container acrros the cluster
 
 

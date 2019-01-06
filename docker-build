@@ -1,0 +1,20 @@
+####docker images and build########
+
+docker image
+docker images -a
+
+
+docker build -t ramunakerikanti0543/app:v0.1 .
+docker build -t repositoryname/appname:version -f Dockerfile
+
+#build when proxy enabled
+export HTTP_PROXY=http://10.20.30.2:1234
+docker build --build-arg HTTP_PROXY .
+
+docker build - < Dockerfile
+Get-Content Dockerfile | docker build - --------------------> Windows
+
+
+docker build https://github.com/ramunakerikanti/tiss_web_1.git ------------------> use Dockerfile from github repository to build docker image
+
+
